@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background-color: #35424a;
+}
+red
+::selection {
+  color: white;
+  background-color: #35424a;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+.navdiv {
+	background-color: #35424a;
+	height: 125px;
+	position: relative;
+}
+.navdiv::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border: 1px solid #Fee;
+	width: 99.9%;
+}
+header{
+	background-image: url(../image/airBallon.jpg);
+	min-height: 88vh;
+	width: 100%;
+	content: "";
+	background-position: center;
+	background-size: cover;
+	content: "";
+	display: block;
+	z-index: -2;
+	opacity: 0.8;
+}
+.meghalaHeader {
+	background-repeat: no-repeat;
+	min-height: 88vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	display: block;
+	z-index: -2;
+	opacity: 0.9;
+}
+.logo {
+	display: inline-block;
+	color: white;
+	line-height: 125px;
+	margin-left: 18%;
+	float: left;
+	cursor: pointer;
+}
+.header .navLink {
+	float: right;
+	margin-right: 15%;
+}
+.header a {
+	text-decoration: none;
+	color: #fff;
+}
+.header li {
+	display: block;
+	float: left;
+	letter-spacing: 3px;
+	line-height: 125px;
+	font-family: 'Source Sans Pro', sans-seri;
+	position: relative;
+	cursor: pointer;
+}
+.navLink .firstList {
+	width: 10em;
+	display: block;
+	text-align: center;
+	position: relative;
+}
+#navmenu , #toggle {
+	display: none;
+}
+.firstList:hover {
+	background-color: #365872;
+}
+.header .droplist {
+	position: absolute;
+	top: 123px;
+	width: 250px;
+	height: 145px;
+	background-color: #eef;
+	z-index: 1000;
+	display: none;
+	text-align: left;
+	border: 2px solid #365872;
+}
+.header li:hover .droplist {
+	display: block;
+}
+.dropDiv {
+	display: inline-block;
+	transition: 1s ease;
+}
+.droplist  li {
+	padding: 20px 0 15px 30px;
+	letter-spacing: 1px;
+	display: block;
+	line-height: 0px;
+	float: none;
+	width: 250px;
+}	
+.droplist a {
+	color: #001;
+}
+.headerCont {
+	height: 61.8vh;
+	text-align: center;
+}
+.headerCont  h1 {
+	display: block;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #FFe;
+	font-size: 3em;
+	font-family: 'Baloo Bhai', cursive;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.headerCont button {
+	display: block;
+	position: absolute;
+	top: 52%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 15px 30px;
+	cursor: pointer;
+	border: none;
+ 	border-radius: 20px;
+ 	outline: none;
+	background-color: #FF5B44;
+	letter-spacing: 2px;
+	color: #fff;
+}
+#headersvg {
+	position: absolute;
+	bottom: 6em;
+}
+/*Middlesection*/
+.ParentSection {
+	width: 100%;
+	height: auto;
+	background-color: #FFF;
+}
+.oldCars {
+	display: flex;
+	justify-content: center;
+	height: 450px;
+	padding: 0 10%;
+	margin-top: 3em;
+}
+.oldCarsCont {
+	width: 70%;
+	font-family: cursive;
+	padding-top: 3em;
+}
+.oldCarsCont h2 {
+	font-size: 30px;
+}
+.oldCarsCont h2 , .oldCarsCont button{
+	margin-top: 2em;
+}
+.oldCarsCont p {
+	margin-top: 1em;
+	text-align: justify;
+	line-height: 30px;
+}
+.oldCarsImg {
+	width: 30%;
+}
+.oldCarsImg img {
+	width: 100%;
+	object-fit: contain;
+	height: 100%;
+}
+.oldCarsCont button {
+	display: block;
+	cursor: pointer;
+	color: #fff;
+	letter-spacing: 2px;
+	text-align: center;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #FF5B44;
+	border: none;
+}
+.oldCarsCont button:hover ,.headerCont button:hover{
+	background-color: #ee5B44;
+}
+#flexReverse {
+	display: flex;
+	flex-direction: row-reverse;
+	background-color: #e1e2e3;
+}
+/*Developer section */
+.DeveloperSec h2 {
+	text-align: center;
+	margin-top: 3em;
+	font-size: 2em;
+}
+.aboutmeSection {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 15%;
+	margin-top: 4em;
+}
+.AboutMe {
+	text-align: center;
+}
+.AboutMe img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid #e1e2e3;
+}
+.AboutMe h3 {
+	margin-top: 10px;
+	letter-spacing: 1px;
+}
+.AboutMe p {
+	margin-top: 8px;
+}
+
+/*Car Description Page*/
+.carDescription, .carCondition, .offerSection, .thankYouMessage {
+	padding: 0 2% 3em 3%;
+	background-color: #eef;
+	padding-top: 2em;
+	width: 60%;
+	margin: 7em auto 0 auto;
+}
+.carDescription h1 , .offerSection h1 , .thankYouMessage h2{
+	text-align: center;
+	font-size: 2em;
+	font-family: cursive;
+}
+.yearMainDiv h3, .carParts h3 {
+	margin: 1em 0;
+	font-size: 1.5em;
+	/*font-family: cursive;*/
+	font-family: cursive;
+}
+.mainspan {
+	display: flex;
+	flex-wrap: wrap;
+	height: 190px;
+	overflow: hidden;
+	text-align: center;
+}
+.yearspan {
+	width: 80px;
+	cursor: pointer;
+	display: block;
+	height: 80px;
+	border-radius: 50%;
+	margin-left: 1em;
+	margin-bottom: 1em;
+	position: relative;
+}
+.yearspan input {
+	display: none;
+}
+.yearspan span {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding-top: 25px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 2px solid #35424a;
+}
+.yearspan:hover {
+	background-color: #e1e2e3;
+}
+.mainspan label input:active ~ span {
+	box-shadow: inset 0 0 0 3px #15424a,
+				inset 0 0 0 6px #fff;
+}
+.mainspan label input:checked ~ span {
+	background-color: #35424a;
+	color: #fff;
+}
+.inputyear input , .carParts input{
+	width: 100%;
+	display: block;
+	margin-top: 2em;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 5px 4px 10px lightgrey inset;
+	height: 40px;
+	padding-left: 1em;
+}
+.carDetail {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2em;
+}
+.BrandDiv {
+	width: 31%;
+	margin-top: 1.5em;
+}
+.BrandDiv label {
+	display: block;
+	margin-top: 1em;
+}
+.BrandDiv select {
+	margin-top: 1em;
+	width: 100%;
+	height: 40px;
+	padding-left: 1em;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 5px 4px 10px lightgrey inset;
+}
+/*car condition page*/
+.carCondition h1 {
+	text-align: center;
+	font-family: cursive;
+}
+.insidediv {
+	background-color: #fff;
+	margin: .2em .5em 0 .5em;
+	border-radius: 20px;
+	padding: .5em;	
+	font-size: 18px;
+}
+.insidediv label {
+	position: relative;
+	padding-left: 2em;
+	display: block;
+	/*margin-bottom: .5em;*/
+}
+.insidediv label input {
+	display: none;
+}
+.circle {
+	height: 24px;
+	width: 24px;
+	cursor: pointer;
+	user-select: none;
+	border-radius: 50%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-color: #e3f2f2;
+}
+ .carDescription button, .carCondition button, .clientInfo button {
+ 	margin: 4em auto 0 auto;
+ 	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	letter-spacing: 2px;
+	text-align: center;
+	/*padding: 15px;*/
+	width: 100px;
+	height: 40px;
+	outline: none;
+	border-radius: 10px;
+	background-color: #35424a;
+	border: 2px solid #FF5B44;
+ }
+.carCondition button:hover, .carDescription button {
+	background-color: #144240;
+}
+label input:active ~ .circle {
+	box-shadow: inset 0 0 0 3px #15424a,
+				inset 0 0 0 6px #fff;
+}
+label:hover .circle {
+	border: 2px solid #35424a;
+}
+label input:checked ~ .circle {
+	background-color: #35424a;
+}
+label input:checked ~ .circle:after {
+	content: "";
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	background-color: #fff;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 50%;
+}
+
+/*offerpage*/
+.offerContent h2{
+	text-align: center;
+	margin: 1em;
+}
+.offerContent p , .thankYouMessage p {
+	font-size: 20px;
+	font-family: sans-serif;
+	margin: 2em;
+	text-align: center;
+}
+.offerContent button{
+	display: block;
+	cursor: pointer;
+	/*font-weight: bolder;*/
+	color: #fff;
+	letter-spacing: 2px;
+	text-align: center;
+	padding: 15px;
+	border-radius: 10px;
+	margin:  4em auto;
+	background-color: #35424a;
+	border: 2px solid #FF5B44;
+}
+.offerContent span , .thankYouMessage span{
+	font-size: 30px;
+	font-weight: bolder;
+	color: #FF5B44;
+}
+.clientInfoBox {
+	padding: 0 8em;
+	display: none;
+}
+.clientInfoBox h2 {
+	text-align: center;
+	margin: 1em 0;
+	font-size: 1.5em;
+	font-family: cursive;
+}
+.clientInfo label, .clientInfo input {
+	display: block;
+	margin: 2.5em 3vw 0em 3vw;
+	font-family: 'Inconsolata', monospace;
+	letter-spacing: 2px;
+	color: #6E6E6E;
+	outline: none;
+}
+.clientInfo button {
+	margin: 2.5em 3vw 0em 3vw;
+}
+/*.clientInfo button {
+	margin: 1em 3vw .6em 3vw;
+	border: none;
+	color: #fff;
+	padding: 10px 15px;
+	border-radius: 6px;
+	cursor: pointer;
+	background-color: #35424a;
+}*/
+.clientInfo input {
+	width: 80%;
+	border-radius: 20px;
+	padding: 9px;
+	outline: none;
+	border: none;
+	margin: 1em auto 1em 3vw;
+}
+.show {
+	display: block;
+}
+/*footer*/
+footer {
+	position: relative;
+	background-color: #35424a;
+	margin-top: 7em;
+	height: auto;
+	padding: 3em 0 3em 8%;
+	display: grid;
+	grid-template-columns: 39% 39% 15vw;
+}
+.destination , .Hotel {
+	margin-right: 2em;
+	display: inline-block;
+	text-align: left;
+}
+.destination p , .Hotel p , .SocialMedia p {
+	display: block;
+}
+footer a {
+	text-decoration: none;
+	color: #fff;
+}
+footer h2 {
+	font-size: 2em;
+	font-family: 'Baloo Bhai', cursive;
+	margin-bottom: .5em;
+	color: #fff;
+	letter-spacing: 2px;
+}
+footer p {
+	font-family: sans-serif;
+	margin-top: .8em;
+}
+@media (max-width: 1000px) {
+	.headerCont  h1 {
+		font-size: 5vw;
+	}
+	footer {
+		text-align: center;
+		grid-row-gap: 2em;
+		grid-template-columns: 100%;
+	}
+}
+@media (max-width: 750px) {
+	header .logo {
+		width: 100%;
+		text-align: center;
+		margin: auto;
+	}	
+	header .droplist {
+		width: 100%;
+		z-index: 1000;
+		margin: 0;
+		padding: 0;
+	}
+	.headerCont  h1 {
+		font-size: 7vw;
+	}
+	.headerCont input {
+		width: 53%;
+	}
+}
+@media (max-width: 530px) {
+	footer h2 {
+		font-size: 6vw;
+	}
+	footer p {
+		font-size: 4vw;
+	}
+}

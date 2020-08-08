@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Description</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width:device-width, initial-scale=1">
+	<meta name="description" content="Selling old car for money, Get best price for selling your old cars">
+	<meta name="keywords" content="Selling old car for money, Get best price for selling your old cars">
+	<link rel="stylesheet" type="text/css" href="css/Css_Styling.css">
+</head>
+<body>
+	<div class="header">
+		<div class="navdiv">
+			<h2 class="logo"><a href="Homepage.html">OldSell</a></h2>
+			<label id="navmenu" for="toggle">&#9776</label>
+			<input type="checkbox" id="toggle">
+			<nav class="mainMenu">
+				<ul class="navLink">
+					<li class="dropdown firstList"><a href="About page.html">Service</a>
+						<ul class="droplist">
+                        	<div class="dropDiv">
+                        		<a href="Car_Description.html"><li>Sell Old Cars</li></a>
+	                        	<a href="#"><li>Car Towing</li></a>
+                        		<a href="#"><li>Car Scrapping</li></a>
+	                        	<a href="#"><li>Car Pooling</li></a>
+                        	</div>
+                        </ul>  
+					</li>
+					<li><a href="services page.html" class="firstList">Contact</a></li>
+					<li><a href="Contact page.html" class="firstList">About Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<section class="carDescription">
+		<h1>Car Description</h1>
+		<div class="yearMainDiv">
+			<h3>Registration Year</h3>
+			<div class="mainspan" id="spanid">
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2019</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2018</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2017</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2016</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2015</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2014</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2013</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2012</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2011</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2010</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2009</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2008</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2007</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2006</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2005</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2004</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2003</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2002</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2001</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>2000</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>1999</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>1998</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>1997</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>1996</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>1995</span>
+				</label>
+				<label class="yearspan">
+					<input type="Radio" name="like">
+					<span>1994</span>
+				</label>
+			</div>
+			<script type="text/javascript">
+				let checkboxes = document.getElementsByTagName('input');
+
+				for (var i=0; i<checkboxes.length; i++)  {
+				  if (checkboxes[i].type == 'checkbox')   {
+				    checkboxes[i].checked = false;
+				  }
+				  if (checkboxes[i].type == 'radio') {
+				  	checkboxes[i].checked = false;
+				  }
+				}
+			</script>
+			<div class="inputyear">
+				<label for="oldyear"></label>
+				<input id="oldyear" type="text" name="olderyear" placeholder="enter registration year">
+			</div>		
+		</div>
+		<div class="carDetail">
+			<div class="BrandDiv">
+				<label for="selectMake">Choose Your Make</label>
+				<select id="selectMake">
+		            <option>Maruti</option>
+		        </select>   
+			</div>
+			<div class="BrandDiv">					
+		        <label for="selectmodel">Choose Your Model</label>
+		        <select id="selectmodel">
+		            <option>800</option>
+		        </select>    				    
+			</div>
+			<div class="BrandDiv">
+				<label for="selectVariant">Choose Your Variant</label>
+				<select id="selectVariant">
+		            <option>LX</option>
+		            <option>MX</option>
+		            <option>SX</option>
+		        </select> 
+			</div>
+		</div>
+		<a href="Car_Condition.html"><button>Next</button></a>
+	</section>
+

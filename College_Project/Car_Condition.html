@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Description</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width:device-width, initial-scale=1">
+	<meta name="description" content="Selling old car for money, Get best price for selling your old cars">
+	<meta name="keywords" content="Selling old car for money, Get best price for selling your old cars">
+	<link rel="stylesheet" type="text/css" href="css/Css_Styling.css">
+</head>
+<body>
+	<div class="header">
+		<div class="navdiv">
+			<h2 class="logo"><a href="Homepage.html">OldSell</a></h2>
+			<label id="navmenu" for="toggle">&#9776</label>
+			<input type="checkbox" id="toggle">
+			<nav class="mainMenu">
+				<ul class="navLink">
+					<li class="dropdown firstList"><a href="About page.html">Service</a>
+						<ul class="droplist">
+                        	<div class="dropDiv">
+                        		<a href="Car_Description.html"><li>Sell Old Cars</li></a>
+	                        	<a href="#"><li>Car Towing</li></a>
+                        		<a href="#"><li>Car Scrapping</li></a>
+	                        	<a href="#"><li>Car Pooling</li></a>
+                        	</div>
+                        </ul>  
+					</li>
+					<li><a href="services page.html" class="firstList">Contact</a></li>
+					<li><a href="Contact page.html" class="firstList">About Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<section class="carCondition">
+		<h1>Car Condition</h1>
+		<div class="carParts">
+			<h3>Milleage Shown</h3>
+			<input type="text" name="milleage shown" placeholder=",000">
+		</div>
+		<div class="carParts">
+			<h3>Title</h3>
+			<div class="insidediv">	
+				<label for="cleantitle">I have a clean title
+					<input id="cleantitle" type="radio" name="title">
+					<span class="circle"></span>
+				</label><br>		    				
+				<label for="uncleantitle">I don't have a clean title
+					<input id="uncleantitle" type="radio" name="title">
+					<span class="circle"></span>
+				</label>
+			</div>
+		</div>
+		<div class="carParts">
+			<h3>Any interior damaged?</h3>
+			<div class="insidediv">	
+				<label for="damagedinterior">Some part are damaged
+					<input id="damagedinterior" type="radio" name="interior damaged">
+					<span class="circle"></span>
+				</label><br>		    				
+				<label for="undamagedinterior">All parts are intact
+					<input id="undamagedinterior" type="radio" name="interior damaged">
+					<span class="circle"></span>
+				</label>
+			</div>
+		</div>
+		<div class="carParts">
+			<h3>Any removed exterior body panels</h3>
+			<div class="insidediv">	
+				<label for="removedexterior">It has some loose or missing panels
+					<input id="removedexterior" type="radio" name="exterior removed">
+					<span class="circle"></span>
+				</label><br>		    				
+				<label for="noremovedexterior">All body panels (doors, bupers, hood) parts are intact
+					<input id="noremovedexterior" type="radio" name="exterior removed">
+					<span class="circle"></span>
+				</label>
+			</div>
+		</div>
+		<div class="carParts">
+			<h3>Any body damaged?</h3>
+			<div class="insidediv">	
+				<label for="damagedbody">It has some body damaged
+					<input id="damagedbody" type="radio" name="body damaged">
+					<span class="circle"></span>
+				</label><br>		    				
+				<label for="undamagedbody">It has no body damaged
+					<input id="undamagedbody" type="radio" name="body damaged">
+					<span class="circle"></span>
+				</label>
+			</div>
+		</div>
+		<div class="carParts">
+			<h3>Any glass, light, mirror damaged?</h3>
+			<div class="insidediv">	
+				<label for="damagedglass">Some are cracked
+					<input id="damagedglass" type="radio" name="glas mirror light damaged">
+					<span class="circle"></span>
+				</label><br>		    				
+				<label for="undamagedglass">Everything are intact
+					<input id="undamagedglass" type="radio" name="glas mirror light damaged">
+					<span class="circle"></span>
+				</label>
+			</div>
+		</div>
+		<div class="carParts">
+			<h3>Does it still start and drive?</h3>
+			<div class="insidediv">	
+				<label for="notstartdrive">It does not start
+					<input id="notstartdrive" type="radio" name="start and drive">
+					<span class="circle"></span>
+				</label><br>		    				
+				<label for="startdrive">It does start and drive
+					<input id="startdrive" type="radio" name="start and drive">
+					<span class="circle"></span>
+				</label>
+			</div>
+		</div>
+		<a href="OfferPage.html"><button>Next</button></a>
+	</section>
+	<script type="text/javascript">
+		let checkboxes = document.getElementsByTagName('input');
+
+		for (var i=0; i<checkboxes.length; i++)  {
+		  if (checkboxes[i].type == 'checkbox')   {
+		    checkboxes[i].checked = false;
+		  }
+		  if (checkboxes[i].type == 'radio') {
+		  	checkboxes[i].checked = false;
+		  }
+		}
+	</script>
